@@ -23,10 +23,6 @@ This is a personal project that was originally developed by David T. Sadler, who
   - Easy to install with [Composer](http://getcomposer.org/).
   - Compliant with [PSR-1](http://www.php-fig.org/psr/psr-1/), [PSR-2](http://www.php-fig.org/psr/psr-2/) and [PSR-4](http://www.php-fig.org/psr/psr-4/).
 
-## Resources
-
-  - [Examples](https://github.com/davidtsadler/ebay-sdk-examples) - Several examples of using the SDK.
-
 ## Requirements
 
   - PHP 7.2+ or PHP 8.0+ with the following extensions:
@@ -65,8 +61,13 @@ $request = new Types\GeteBayTimeRequestType();
 $response = $service->geteBayTime($request);
 
 // Output the result of calling the service operation.
-printf("The official eBay time is: %s\n", $response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y'));
+printf(
+    "The official eBay time is: %s\n",
+    $response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y')
+);
 ```
+
+More examples can be found in the [ebay-sdk-examples](https://github.com/davidtsadler/ebay-sdk-examples) repository.
 
 ## License
 
