@@ -17,7 +17,7 @@ This is a personal project that was originally developed by David T. Sadler, who
 
 ## Features
 
-  - Compatible with PHP 7.4 or PHP 8.
+  - Compatible with PHP 7.2+ or PHP 8.0+.
   - Easy to install with [Composer](http://getcomposer.org/).
   - Compliant with [PSR-1](http://www.php-fig.org/psr/psr-1/), [PSR-2](http://www.php-fig.org/psr/psr-2/) and [PSR-4](http://www.php-fig.org/psr/psr-4/).
 
@@ -28,7 +28,7 @@ This is a personal project that was originally developed by David T. Sadler, who
 
 ## Requirements
 
-  - PHP 7.4 or PHP 8 with the following extensions:
+  - PHP 7.2+ or PHP 8.0+ with the following extensions:
       - curl
       - libxml
   - 64 bit version as there are some [issues when using the SDK with 32 bit](http://devbay.net/sdk/guides/getting-started/requirements.html#using-the-sdk-with-32-bit-systems).
