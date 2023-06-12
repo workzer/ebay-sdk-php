@@ -13,7 +13,7 @@ but to provide a solution for a smooth upgrade of existing apps to PHP 8. New us
 [![License](https://img.shields.io/github/license/benmorel/ebay-sdk-php)](https://opensource.org/license/apache-2-0/)
 ---
 
-This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/api-documentation) in their PHP code, and build software using services such as [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html), [Trading](http://developer.ebay.com/DevZone/guides/ebayfeatures/index.html), [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html), etc. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/getting-started/installation.html) and by following the [Basic Usage Guide](http://devbay.net/sdk/guides/getting-started/basic-usage.html).
+This project enables PHP developers to use the eBay API in their PHP code, and build software using services such as Finding, Trading, Shopping, etc.
 
 This is a personal project that was originally developed by David T. Sadler, who decided to create this project to make up for the lack of an official SDK for PHP. It is in no way endorsed, sponsored or maintained by eBay.
 
@@ -25,7 +25,6 @@ This is a personal project that was originally developed by David T. Sadler, who
 
 ## Resources
 
-  - [User Guides](http://devbay.net/sdk/guides/) - Getting started guide and in-depth information.
   - [Examples](https://github.com/davidtsadler/ebay-sdk-examples) - Several examples of using the SDK.
 
 ## Requirements
@@ -33,7 +32,7 @@ This is a personal project that was originally developed by David T. Sadler, who
   - PHP 7.2+ or PHP 8.0+ with the following extensions:
       - curl
       - libxml
-  - 64 bit version as there are some [issues when using the SDK with 32 bit](http://devbay.net/sdk/guides/getting-started/requirements.html#using-the-sdk-with-32-bit-systems).
+  - 64 bit version
   - SSL enabled on the cURL extension so that https requests can be made.
 
 ## Installation
@@ -68,13 +67,6 @@ $response = $service->geteBayTime($request);
 // Output the result of calling the service operation.
 printf("The official eBay time is: %s\n", $response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y'));
 ```
-
-## Project Goals
-
-  - Be well maintained.
-  - Be [well documented](http://devbay.net/sdk/guides/).
-  - Be [well tested](https://github.com/BenMorel/ebay-sdk-php/tree/master/test).
-  - Be well supported with [working examples](https://github.com/davidtsadler/ebay-sdk-examples).
 
 ## License
 
