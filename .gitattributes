@@ -7,6 +7,8 @@ test/ export-ignore
 .travis.yml export-ignore
 CHANGELOG.md export-ignore
 Makefile export-ignore
+phpstan.neon export-ignore
+phpstan-baseline.neon export-ignore
 phpunit.xml export-ignore
 README.md export-ignore
 requirements_check.php export-ignore
